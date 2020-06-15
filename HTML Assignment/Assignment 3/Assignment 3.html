@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Videos</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<h1>Awesome Online Videos    <span> <img src="logo.png" width="30" height="30"> </span>  </h1>
+<hr>
+<hr>
+<div>
+	<h3>Video of the Week</h3>
+	<div class="videoArea">
+	<video id="video" width="300" height="=400" loop>
+		<source src="23.mp4" type="video/mp4">
+	</video>
+	</div>
+	<br><br>
+	<button onclick="videoPlay()">Play</button>
+	<button onclick="videoPause()">Pause</button>
+</div>
+</body>
+<script type="text/javascript">
+	var video= document.getElementById('video');
+	function videoPlay()
+	{
+		video.play();
+	}
+	function videoPause()
+	{
+		video.pause();
+	}
+</script>
+</html>

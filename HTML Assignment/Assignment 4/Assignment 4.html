@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BCCI Statistics</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Indian team (T20 match)</h1>
+	<table align="center">
+		<tr>
+			<th>Overs</th>
+			<th>Runs</th>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>40</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>75</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>140</td>
+		</tr>
+	</table>
+	<br><br>
+	<canvas id="chart" width="300" height="500"></canvas>
+</body>
+<script type="text/javascript">
+	var canvas= document.getElementById("chart");
+	var c=canvas.getContext("2d");
+	c.beginPath();
+	c.moveTo(0,0);
+	c.lineTo(0,100);
+	c.lineTo(200,100);
+	c.stroke();
+	
+	c.strokeStyle="blue";
+	c.lineJoin="round";
+	c.beginPath();
+	c.moveTo(0, 0);
+	c.lineTo(40, 5);
+	c.lineTo(75, 10);
+	c.lineTo(140, 15);
+	c.stroke();
+</script>
+</html>
